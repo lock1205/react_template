@@ -5,6 +5,11 @@ import { authLink, navItems } from '../constants/data';
 import ModeCtrl from './ModeCtrl';
 
 const NavBar = () => {
+  const setBackground = (darkMode) => {
+    const rootMode = document.querySelector('.root');
+    console.log(rootMode);
+  };
+
   return (
     <nav>
       <div className="container">
@@ -36,7 +41,7 @@ const NavBar = () => {
                 {item.label}
               </Link>
             ))}
-            <ModeCtrl />
+            <ModeCtrl setBackground={setBackground} />
           </div>
         </div>
       </div>

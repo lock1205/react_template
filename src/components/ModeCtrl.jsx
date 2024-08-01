@@ -1,13 +1,15 @@
 import { Moon, Sun } from 'lucide-react';
 import React, { useState } from 'react';
 
-const ModeCtrl = () => {
+const ModeCtrl = ({ setBackground }) => {
   const [darkMode, setDarkMode] = useState(true);
-  return (
-    <button onClick={() => setDarkMode(!darkMode)}>
-      {darkMode ? <Sun /> : <Moon />}
-    </button>
-  );
+
+  const handleDay = () => {
+    setDarkMode(!darkMode);
+    setBackground(darkMode);
+  };
+
+  return <button onClick={handleDay}>{darkMode ? <Sun /> : <Moon />}</button>;
 };
 
 export default ModeCtrl;
