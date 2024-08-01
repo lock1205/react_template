@@ -4,6 +4,11 @@
 
 :root{
   color-scheme: dark;
-
+  
 }
 
+.container{
+  margin: auto;
+  padding: 1rem;
+  width: 100%;
+}

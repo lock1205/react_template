@@ -1,9 +1,19 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import Features from './components/Features';
+import NavBar from './components/NavBar';
+
 const App = () => {
   return (
-    <div className="App ">
-      <div className="kr">첫 페이지 구성</div>
-      <div className="en">Create First Page</div>
-    </div>
+    <BrowserRouter>
+      <div className="App ">
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/features" element={<Features />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 };
 
