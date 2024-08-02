@@ -4,11 +4,28 @@
 
 :root{
   color-scheme: dark;
-  
 }
+
 
 .container{
   margin: auto;
   padding: 1rem;
   width: 100%;
 }
+
+@media(max-width: 1024px){
+  .container{
+    max-width: 100%;
+  }
+}
+
+
+.vid{
+  width: 80%;
+  box-shadow: 0 0 5px indigo
+}
+/* footer .container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);  아래 소스와 동일하다.
+  grid-template-columns: 1fr 1fr 1fr;
+} */
