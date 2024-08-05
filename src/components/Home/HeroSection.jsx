@@ -6,14 +6,15 @@ import video2 from '../../assets/video2.mp4';
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col item-center mt-6 lg:mt-20 gap:20px">
+    <div className="flex flex-col items-center mt-6 lg:mt-20 gap:20px">
+      {/* item-center와 items-center는 엄연히 다르다. items는 해당 div안에 있는 모든 요소에 대해서 관여한다. */}
       <h1 className="text-4xl lg:text-7xl sm:text-6xl font-customFontEn tracking-tight text-neutral-700 dark:text-neutral-300 font-bold  text-center">
         AceDot Build Tools{' '}
         <span className="bg-gradient-to-r from-indigo-200 to-indigo-800 text-transparent bg-clip-text">
           for Developers
         </span>
       </h1>
-      <p className=" text-center font-customFontKr text-neutral-400 max-w-4xl  text-base   mb:text-sm lg:text-lg">
+      <p className=" text-center font-customFontKr text-neutral-400 max-w-4xl  text-base   mb:text-sm lg:text-lg ">
         국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여
         필요한 경우에 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와
         권리의 본질적인 내용을 침해할 수 없다. 의원을 제명하려면 국회재적의원
