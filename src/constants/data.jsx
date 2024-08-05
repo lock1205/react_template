@@ -105,7 +105,7 @@ export const features = [
 
 export const checklistItems = [
   {
-    title: 'Code merge made easy',
+    title: '쉬운 코드 병합작업',
     description:
       'Track the performance of your VR apps and gain insights into user behavior.',
   },
@@ -136,6 +136,7 @@ export const pricingOptions = [
       'Web Analytics',
       'Private Mode',
     ],
+    link: 'free',
   },
   {
     title: 'Pro',
@@ -146,6 +147,7 @@ export const pricingOptions = [
       'Web Analytics (Advance)',
       'Private Mode',
     ],
+    link: 'Pro',
   },
   {
     title: 'Enterprise',
@@ -156,6 +158,7 @@ export const pricingOptions = [
       'High Performance Network',
       'Private Mode',
     ],
+    link: 'enterprise',
   },
 ];
 

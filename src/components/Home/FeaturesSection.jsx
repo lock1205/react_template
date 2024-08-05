@@ -4,7 +4,7 @@ import { features } from '../../constants/data';
 const FeaturesSection = () => {
   return (
     <div className="my-20 border-b border-neutral-700">
-      <div className="text-center">
+      <div className="">
         <span className="bg-neutral-800 text-indigo-500 rounded-full h-8 text-sm font-medium px-4 py-1 uppercase block w-fit m-auto mb-20">
           Features
         </span>
@@ -14,9 +14,23 @@ const FeaturesSection = () => {
             Your Code
           </span>
         </h2>
-        <div>
+        <div className="flex flex-wrap mt-10 lg:mt-20">
           {features.map((item, idx) => (
-            <div key={idx}>{item.icon} </div>
+            <div key={idx} className="w-full lg:w-1/3 sm:w-1/2">
+              <div className="flex">
+                <div className=" flex mx-6 h-10 w-10 p-2 bg-neutral-900 text-indigo-700 justify-center items-center rounded-full">
+                  {item.icon}
+                </div>
+                <div>
+                  <h5 className="mt-1 mb-6 text-xl font-customFontKr">
+                    {item.text}
+                  </h5>
+                  <p className="text-base p-2 mb-20 text-neutral-500 font-customFontEn">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </div>

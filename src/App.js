@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Signin from './components/Auth/Signin';
 import Signup from './components/Auth/Signup';
+import ScrollToTop from 'react-scroll-to-top';
 
 const App = () => {
   return (
@@ -19,6 +20,18 @@ const App = () => {
           <Route path="/signup" element={<Signup />} />
         </Routes>
         <Footer />
+        <ScrollToTop
+          smooth
+          width="20"
+          height="20"
+          color="white"
+          style={{
+            background: '#6397a1',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        />
       </div>
     </BrowserRouter>
   );
